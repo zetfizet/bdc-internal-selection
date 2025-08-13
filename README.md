@@ -10,16 +10,12 @@ This project builds a **machine learning system** to automatically score IELTS e
 
 Instead of manually grading hundreds of essays, this model uses **transformer-based NLP** to understand the meaning, structure, and style of writing — just like a human examiner.
 
----
-
 ## Why This Matters
 Essay grading is **time-consuming** and **subjective**.  
 By using NLP, we can:
 - Provide **instant feedback** to students.
 - Reduce **human bias** in grading.
 - Allow teachers to focus on **teaching**, not repetitive scoring.
-
----
 
 ## Approach
 We experimented with two paths:
@@ -37,8 +33,6 @@ We experimented with two paths:
 **Evaluation Metric**:  
 📏 **Mean Squared Error (MSE)** — lower is better.
 
----
-
 ## Workflow
 1. **Data Cleaning** – handle missing values, remove unrealistic essays.
 2. **Feature Engineering** – extract text statistics, prepare transformer inputs.
@@ -46,23 +40,7 @@ We experimented with two paths:
 4. **Validation** – 5-fold cross validation to ensure stable results.
 5. **Prediction** – generate final `submission.csv` for test data.
 
----
-
 ## Results
 - **Transformer + numeric features** consistently achieved lower MSE than all baseline models.
 - K-Fold CV reduced overfitting and improved score stability.
 - The model generalizes well for essays in different topics.
-
----
-
-## How to Use
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/ielts-essay-scoring.git
-cd ielts-essay-scoring
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Open Jupyter Notebook
-jupyter notebook BDC_Internal_ITS_2025.ipynb
